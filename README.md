@@ -56,7 +56,19 @@ Project documentation is available inside the **docs/** directory.
 
 ## 🚀 Project Status
 
-**Current Phase:** Phase 0 – Project Foundation
+## 🚀 Current Progress
+
+| Milestone | Status |
+|-----------|--------|
+| Repository Setup | ✅ Completed |
+| Documentation | 🟡 In Progress |
+| Architecture Design | ⏳ Pending |
+| Virtual Network Design | ⏳ Pending |
+| Wazuh Deployment | ⏳ Pending |
+| Detection Engineering | ⏳ Pending |
+| Threat Hunting | ⏳ Pending |
+| DFIR | ⏳ Pending |
+| BTL1 Preparation | ⏳ Ongoing |**Current Phase:** Phase 0 – Project Foundation
 
 ---
 
