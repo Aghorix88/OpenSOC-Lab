@@ -56,21 +56,45 @@ Project documentation is available inside the **docs/** directory.
 
 ## 🚀 Project Status
 
-## 🚀 Current Progress
+## 📈 Project Progress
 
 | Milestone | Status |
-|-----------|--------|
+|------------|---------|
 | Repository Setup | ✅ Completed |
-| Documentation | 🟡 In Progress |
-| Architecture Design | ⏳ Pending |
-| Virtual Network Design | ⏳ Pending |
-| Wazuh Deployment | ⏳ Pending |
+| Documentation | ✅ Completed (v0.3) |
+| Architecture Design | 🟡 In Progress |
+| Virtual Network Design | 🟡 In Progress |
+| Wazuh Deployment | ✅ Completed |
 | Detection Engineering | ⏳ Pending |
 | Threat Hunting | ⏳ Pending |
 | DFIR | ⏳ Pending |
-| BTL1 Preparation | ⏳ Ongoing |**Current Phase:** Phase 0 – Project Foundation
-
+| BTL1 Preparation | 🔄 Ongoing |
 ---
+
+## 🚀 Current Release
+
+### v0.3 - Wazuh Core Operational
+
+Successfully deployed:
+
+- ✅ Wazuh Manager
+- ✅ Wazuh Dashboard
+- ✅ Wazuh Indexer
+
+Key achievements:
+
+- Enterprise SIEM deployed
+- Dashboard operational
+- Infrastructure documented
+- Deployment guide completed
+- Real-world troubleshooting documented
+
+See:
+
+- `docs/deployment/`
+- `docs/troubleshooting/`
+- `docs/changelog.md`
+
 
 ## 📜 License
 
