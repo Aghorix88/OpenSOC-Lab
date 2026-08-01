@@ -8,12 +8,12 @@ The format is inspired by Keep a Changelog.
 
 # v0.4 - First Windows Endpoint Connected
 
-Release Date: 01 August 2026
+**Release Date:** 01 August 2026
 
 ## Added
 
 - Windows 11 endpoint deployment
-- Wazuh Windows Agent 4.12
+- Wazuh Windows Agent v4.12
 - First endpoint successfully connected to Wazuh Manager
 - Secure agent-manager communication established
 - Real-time endpoint monitoring enabled
@@ -27,7 +27,7 @@ Release Date: 01 August 2026
 
 ## Infrastructure
 
-- Ubuntu Server 24.04
+- Ubuntu Server 24.04 LTS
 - Oracle VirtualBox
 - Wazuh Manager
 - Wazuh Dashboard
@@ -37,21 +37,17 @@ Release Date: 01 August 2026
 
 ## Current Status
 
-✅ Wazuh Manager Running
-
-✅ Wazuh Dashboard Running
-
-✅ Wazuh Indexer Running
-
-✅ Windows Agent Connected
-
-✅ Endpoint Visible in Dashboard
+- ✅ Wazuh Manager Running
+- ✅ Wazuh Dashboard Running
+- ✅ Wazuh Indexer Running
+- ✅ Windows Agent Connected
+- ✅ Endpoint Visible in Dashboard
 
 ---
 
 # v0.3 - Wazuh Core Operational
 
-Release Date: 31 July 2026
+**Release Date:** 31 July 2026
 
 ## Added
 
@@ -65,7 +61,7 @@ Release Date: 31 July 2026
 
 ## Infrastructure
 
-- Ubuntu Server 26.04
+- Ubuntu Server 24.04 LTS
 - Oracle VirtualBox
 - NAT Network
 - 8 GB RAM
@@ -75,29 +71,26 @@ Release Date: 31 July 2026
 
 ### Wazuh Indexer Memory Issue
 
-Problem:
+**Problem**
 
-Dashboard displayed:
+The dashboard displayed:
 
 > Wazuh dashboard server is not ready yet
 
-Root Cause:
+**Root Cause**
 
 Linux Out Of Memory (OOM) Killer terminated the Wazuh Indexer.
 
-Resolution:
+**Resolution**
 
 - Increased VM RAM from 4 GB to 8 GB
-- Restarted services
+- Restarted Wazuh services
 - Verified port 9200
-- Dashboard operational
+- Confirmed dashboard accessibility
 
 ## Current Status
 
-✅ Wazuh Manager Running
-
-✅ Wazuh Dashboard Running
-
-✅ Wazuh Indexer Running
-
-✅ Dashboard Accessible
+- ✅ Wazuh Manager Running
+- ✅ Wazuh Dashboard Running
+- ✅ Wazuh Indexer Running
+- ✅ Dashboard Accessible
