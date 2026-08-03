@@ -1,101 +1,235 @@
 # 🛡️ OpenSOC-Lab
 
-> **Learn. Detect. Investigate. Improve.**
+> **Learn. Detect. Investigate. Respond. Improve.**
 
-An enterprise-inspired open-source **Security Operations Center (SOC)** home lab designed to develop practical Blue Team skills through detection engineering, threat hunting, incident response, digital forensics, and continuous learning.
-
----
-
-## 🎯 Mission
-
-Build a realistic SOC environment using open-source technologies to gain hands-on experience with security monitoring, attack detection, incident response, and forensic investigations.
+An enterprise-inspired open-source **Security Operations Center (SOC)** home lab built to develop practical Blue Team skills using **Wazuh SIEM**. OpenSOC-Lab simulates a real-world SOC environment for security monitoring, attack detection, incident response, threat hunting, and digital forensics.
 
 ---
 
-## 🌟 Vision
+# 📖 Project Overview
 
-Bridge the gap between academic learning and real-world SOC operations by creating a professional, well-documented security lab.
+OpenSOC-Lab is a self-hosted SOC environment running inside **Oracle VirtualBox**. It consists of multiple virtual machines communicating over a private network where attacks can be safely simulated and detected.
+
+The lab currently includes:
+
+- Ubuntu Server (Wazuh Manager, Indexer & Dashboard)
+- Windows 11 Endpoint (Wazuh Agent)
+- Ubuntu Endpoint (Wazuh Agent)
+- Kali Linux (Attacker Machine)
+
+The objective is to build a practical portfolio project that demonstrates enterprise SOC workflows using open-source technologies.
 
 ---
 
-## 🎓 Learning Objectives
+# 🎯 Mission
 
-- Security Operations Center (SOC)
-- SIEM Engineering
+Develop a production-inspired Security Operations Center using open-source tools to gain hands-on experience in:
+
+- Security Monitoring
 - Detection Engineering
 - Threat Hunting
 - Incident Response
 - Digital Forensics (DFIR)
 - Threat Intelligence
 - Security Automation
+
+---
+
+# 🌟 Vision
+
+Bridge the gap between academic learning and real-world SOC operations by building a fully documented, continuously evolving Blue Team laboratory.
+
+---
+
+# 🎓 Learning Objectives
+
+- Security Operations Center (SOC)
+- SIEM Engineering
+- Detection Engineering
+- Threat Hunting
+- Incident Response
+- Malware Detection
+- Digital Forensics (DFIR)
+- Threat Intelligence
+- Active Response
+- Blue Team Operations
 - BTL1 Preparation
 
 ---
 
-## 🛠️ Planned Technology Stack
+# 🛠️ Technology Stack (Current)
 
-| Category | Technologies |
-|----------|--------------|
-| Operating Systems | Ubuntu Server, Windows 11, Kali Linux |
-| SIEM | Wazuh |
-| Network Monitoring | Suricata, Zeek |
-| Endpoint Monitoring | Sysmon, Auditd |
+| Category | Technology |
+|-----------|------------|
+| Virtualization | Oracle VirtualBox |
+| Operating Systems | Ubuntu Server 22.04 LTS, Ubuntu Desktop 22.04 LTS, Windows 11, Kali Linux |
+| SIEM | Wazuh 4.12 |
+| Search Engine | OpenSearch |
+| Dashboard | Wazuh Dashboard |
+| Endpoint Monitoring | Wazuh Agents |
+| Networking | VirtualBox NAT Network |
+| Attack Simulation | Kali Linux |
+
+---
+
+# 🚀 Future Roadmap (Phase 2)
+
+The following technologies will be integrated as OpenSOC-Lab evolves:
+
+| Category | Technology |
+|-----------|------------|
+| Log Analytics | Elasticsearch |
+| Log Pipeline | Logstash |
+| Visualization | Kibana |
+| IDS | Suricata |
+| Network Monitoring | Zeek |
+| Endpoint Telemetry | Sysmon |
+| Linux Auditing | Auditd |
 | Vulnerability Management | OpenVAS |
-| DFIR | Velociraptor, Autopsy |
 | Threat Intelligence | MISP |
-| Automation | Shuffle |
-| Detection | Sigma, YARA |
+| DFIR | Velociraptor |
+| Memory Analysis | Volatility 3 |
+| Forensics | Autopsy |
+| Detection Rules | Sigma |
+| Malware Detection | YARA |
+| SOAR | Shuffle |
 
 ---
 
-## 📂 Documentation
+# 🏗️ Lab Architecture
 
-Project documentation is available inside the **docs/** directory.
+The complete architecture documentation is available in:
+
+```
+images/architecture/
+```
+
+Includes:
+
+- OpenSOC-Lab Architecture
+- Network Topology
+- Data Flow
+- Wazuh Components
+- VM Layout
+- Attack & Detection Flow
 
 ---
 
-## 🚀 Project Status
+# 📂 Repository Structure
 
-## 📈 Project Progress
+```text
+OpenSOC-Lab
+│
+├── assets/
+├── docs/
+├── images/
+│   ├── architecture/
+│   ├── deployment/
+│   ├── dashboard/
+│   ├── agents/
+│   ├── alerts/
+│   └── troubleshooting/
+│
+├── scripts/
+├── rules/
+├── tools/
+└── README.md
+```
+
+---
+
+# 📊 Current Project Status
 
 | Milestone | Status |
 |------------|---------|
 | Repository Setup | ✅ Completed |
-| Documentation | ✅ Completed (v0.3) |
-| Architecture Design | 🟡 In Progress |
-| Virtual Network Design | 🟡 In Progress |
-| Wazuh Deployment | ✅ Completed |
-| Detection Engineering | ⏳ Pending |
+| Project Documentation | ✅ Completed |
+| Architecture Diagrams | ✅ Completed |
+| Virtual Lab Setup | ✅ Completed |
+| Wazuh Installation | ✅ Completed |
+| Wazuh Dashboard | ✅ Completed |
+| Windows Agent Deployment | ✅ Completed |
+| Ubuntu Agent Deployment | 🔄 In Progress |
+| Dashboard Documentation | 🔄 In Progress |
+| Attack Simulations | ⏳ Pending |
+| Detection Rules | ⏳ Pending |
+| Active Response | ⏳ Pending |
 | Threat Hunting | ⏳ Pending |
-| DFIR | ⏳ Pending |
-| BTL1 Preparation | 🔄 Ongoing |
+| Digital Forensics | ⏳ Pending |
+| ELK Integration (Phase 2) | 📅 Planned |
+
 ---
 
-## 🚀 Current Release
+# 🚀 Current Release
 
-### v0.3 - Wazuh Core Operational
+## **v0.5 — Wazuh Infrastructure Operational**
 
-Successfully deployed:
+Successfully implemented:
 
+- ✅ Ubuntu SOC Server
 - ✅ Wazuh Manager
-- ✅ Wazuh Dashboard
 - ✅ Wazuh Indexer
+- ✅ Wazuh Dashboard
+- ✅ Windows Agent
+- ✅ Virtual Network
+- ✅ Architecture Documentation
+- ✅ Deployment Documentation
 
-Key achievements:
+Current capabilities:
 
-- Enterprise SIEM deployed
-- Dashboard operational
-- Infrastructure documented
-- Deployment guide completed
-- Real-world troubleshooting documented
+- Centralized Log Collection
+- Endpoint Monitoring
+- Security Event Monitoring
+- Dashboard Visualization
+- Agent Management
+- OpenSearch Indexing
 
-See:
+---
 
-- `docs/deployment/`
-- `docs/troubleshooting/`
-- `docs/changelog.md`
+# 📸 Documentation
 
+The repository includes:
 
-## 📜 License
+- Architecture Diagrams
+- Deployment Screenshots
+- Dashboard Screenshots
+- Agent Configuration
+- Troubleshooting Guide
+- Future Roadmap
 
-Licensed under the MIT License.
+---
+
+# 🎯 Upcoming Features
+
+The next milestones include:
+
+- Attack Simulations (Nmap, Hydra, Nikto, Metasploit)
+- Detection Engineering
+- Custom Wazuh Rules
+- MITRE ATT&CK Mapping
+- Alert Analysis
+- Incident Response Playbooks
+- Threat Hunting Scenarios
+- Active Response
+- ELK Stack Integration
+- Blue Team Exercises
+
+---
+
+# 🤝 Contributing
+
+This project is currently under active development.
+
+Suggestions, ideas, and contributions are always welcome.
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## ⭐ If you found this project useful, consider giving it a Star.
+
+**OpenSOC-Lab** is being built as a long-term learning project to demonstrate practical SOC, Blue Team, Detection Engineering, and Incident Response skills using enterprise-inspired open-source technologies.
