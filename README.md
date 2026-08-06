@@ -59,7 +59,13 @@ Develop a production-inspired Security Operations Center using open-source techn
 - Security Automation
 
 ---
+# 🎯 Project Philosophy
 
+OpenSOC-Lab is not intended to be just another Wazuh installation guide.
+
+The project is being developed as a production-inspired Blue Team laboratory where every deployed component is actively used to simulate attacks, generate telemetry, engineer detections, investigate security events, perform threat hunting, and document incident response activities.
+
+Each phase of development emphasizes understanding the technology, validating detections, and continuously improving defensive capabilities rather than simply deploying infrastructure.
 # 🌟 Vision
 
 Bridge the gap between academic learning and real-world SOC operations by building a fully documented, enterprise-inspired Blue Team laboratory.
